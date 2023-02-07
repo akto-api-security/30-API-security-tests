@@ -15,3 +15,14 @@
 
 https://user-images.githubusercontent.com/91306853/217299424-6736d728-6803-4134-8c97-225193bf7698.mp4
 
+## Test 2 : Broken Function Level Authorization by changing HTTP Method
+
+1. Open the API collection that you want to test for vulnerabilities.
+2. Click on Run test button.
+3. Select only Broken Function level authorization by changing HTTP method test.
+4. Count to 10-Mississippi for Test results.
+5. Analyze the High severity issues. 
+6. Here, we selected the /api/cards endpoint that fetches all the credit card info from all users.
+
+https://user-images.githubusercontent.com/91306853/217300011-db834337-70d2-4985-926e-0970e7f8e78e.mp4
+
