@@ -26,3 +26,17 @@ https://user-images.githubusercontent.com/91306853/217299424-6736d728-6803-4134-
 
 https://user-images.githubusercontent.com/91306853/217300011-db834337-70d2-4985-926e-0970e7f8e78e.mp4
 
+## Test 3 : Broken user authentication by removing auth token
+
+Step 1: Set attacker token
+Step 2: Observe api (Feedbacks endpoint in this case)
+Step 3: Select this endpoint
+Step 4: Click on Run test with just Broken Auth
+Step 5: Wait for test result
+Step 6: Check original attempt has auth token
+Step 7: Test attempt doesn't have token, yet it succeeded - Broken user authentication vulnerability found. :key:
+
+
+https://user-images.githubusercontent.com/91306853/219386085-820ef832-3679-4d2c-9a7f-6af499923d21.mov
+
+
