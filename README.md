@@ -69,7 +69,10 @@ Step 8: Observe algo=none
 🐞 JWT None algo vulnerability found
 
 
-https://user-images.githubusercontent.com/91306853/221205044-460ff9a1-7283-491e-9f6f-fc39a738c1e5.mp4
+
+
+https://user-images.githubusercontent.com/91306853/221206399-5b6f856b-e56c-4fe8-926a-bdb48136845d.mp4
+
 
 
 
@@ -88,7 +91,7 @@ https://user-images.githubusercontent.com/91306853/221205245-6c32c6d3-2863-4db7-
 
 
 
-## Test 7 : Broken user authentication by removing auth token
+## Test 7 : Broken Object Level Authorization by Parameter Pollution 
 
 Step 1: Select BOLA by parameter pollution
 Step 2: Run test.
@@ -99,6 +102,10 @@ Step 6: This results in a success response
 Step 7: The victim's cart has a new product added now!
 
 🐞 Vulnerable API
+
+
+https://user-images.githubusercontent.com/91306853/221206568-3d3d75f2-1e69-4d0d-86a2-8c98cb87bb7d.mp4
+
 
 
 ## Test 8 : Broken Object Level Authorization in old API versions
@@ -145,5 +152,8 @@ https://user-images.githubusercontent.com/91306853/221204724-bb78be9a-378b-4456-
 🐞 API is vulnerable!
 
 
-https://user-images.githubusercontent.com/91306853/221205729-97607d8d-6742-453f-a714-8b3985ccdc65.mp4
+
+https://user-images.githubusercontent.com/91306853/221206304-ba92df43-de9a-4dc2-b296-b0fb64c8231b.mp4
+
+
 
