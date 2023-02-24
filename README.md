@@ -39,4 +39,86 @@ https://user-images.githubusercontent.com/91306853/217300011-db834337-70d2-4985-
 
 https://user-images.githubusercontent.com/91306853/219386085-820ef832-3679-4d2c-9a7f-6af499923d21.mov
 
+## Test 4 : Broken user authentication by removing auth token
 
+Step 1: Click on run and select swagger file detection test
+Step 2: Go to testing and wait for a minute for test results
+Step 3: Click on the failed test - Assets found on page
+Step 4: Click on the Attempt tab to see the test API call
+Step 5: The response contains HTML page with swagger details
+Step 6: Verify it by actually entering the URL
+
+🐞 Detected unprotected swagger file!
+
+
+## Test 5 : Broken user authentication by removing auth token
+
+Step 1: Look at the original data - last name is "johnson"
+Step 2: Select the endpoint you want to test for JWT None attack
+Step 3: Click on Run test and select JWT None algo attack
+Step 4: Look at the test results - 1 HIGH severity issue found
+Step 5: Akto made 4 attempts - 1 succeeded with 200 OK 
+Step 6: Refresh website, notice lastname changed from "johnson" to "victim"
+Step 7: Look at the attack again, check the token on http://JWT.io
+Step 8: Observe algo=none
+
+🐞 JWT None algo vulnerability found
+
+
+## Test 6 : Broken user authentication by removing auth token
+
+Step 1: Select a POST order endpoint
+Step 2: Select the Broken Authentication test - JWT failed to verify signature
+Step 3: Go to test results. Observe that there is a high vulnerability issue
+Step 4: Check the Original tab - the original token signature starts with "HQq0"
+Step 5: Check Attempt tab - gives 200 OK response with signature starting with "aQq0" - this is invalid signature, yet server accepted
+
+
+## Test 7 : Broken user authentication by removing auth token
+
+Step 1: Select BOLA by parameter pollution
+Step 2: Run test.
+Step 3: Check results
+Step 4: The original request has 3 params.
+Step 5: Attempt request has 6 params - all occurring twice with a diff "BasketId" value. 
+Step 6: This results in a success response
+Step 7: The victim's cart has a new product added now!
+
+🐞 Vulnerable API
+
+
+## Test 8 : Broken user authentication by removing auth token
+
+Step 1: Select the list of endpoints
+Step 2: Select Old version API tests.
+Step 3: Go to the test results section
+Step 4: Check details for the vulnerability
+Step 5: Notice that original endpoint uses v2 - /api/v2/users
+Step 6: Navigate to Attempt tab
+Step 7: Notice that /api/v1/users also returns 200 OK with the flag
+
+🐞 BOLA in old api versions
+
+
+## Test 9 : Broken user authentication by removing auth token
+
+Step 1: Select the Django-exposed-debug-page test and run it
+Step 2: Wait for the result
+Step 3: Check the Attempt tab and look for debug details in the response
+Step 4: Check details for the vulnerability
+Step 5: Observe we open the debug page - with details of modules, and inner workings of Django server code
+
+🐞 django-exposed-debug-page
+
+
+## Test 10 : Broken user authentication by removing auth token
+
+1. Select the API Collection you want to test
+2. Select Open-redirect test under Security Misconfiguration and click on run test
+3. Navigate to testing. Notice, Akto has found all the APIs which have open redirects
+4. Click on the vulnerability to see details.
+5. Notice that the original request redirects to GitHub
+6. Navigate to Attempt tab. Notice Akto tries a test to redirect to evil. com
+7. See the attempt succeeds! Server returns 302 with location evil. com. 
+
+🐞 API is vulnerable!
