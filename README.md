@@ -41,12 +41,12 @@ https://user-images.githubusercontent.com/91306853/219386085-820ef832-3679-4d2c-
 
 ## Test 4 : Swagger file detection - Security misconfiguration 
 
-Step 1: Click on run and select swagger file detection test
-Step 2: Go to testing and wait for a minute for test results
-Step 3: Click on the failed test - Assets found on page
-Step 4: Click on the Attempt tab to see the test API call
-Step 5: The response contains HTML page with swagger details
-Step 6: Verify it by actually entering the URL
+1. Click on run and select swagger file detection test
+2. Go to testing and wait for a minute for test results
+3. Click on the failed test - Assets found on page
+4. Click on the Attempt tab to see the test API call
+5. The response contains HTML page with swagger details
+6. Verify it by actually entering the URL
 
 🐞 Detected unprotected swagger file!
 
@@ -57,14 +57,14 @@ https://user-images.githubusercontent.com/91306853/221205469-12081044-f357-457c-
 
 ## Test 5 : JWT None algo attack
 
-Step 1: Look at the original data - last name is "johnson"
-Step 2: Select the endpoint you want to test for JWT None attack
-Step 3: Click on Run test and select JWT None algo attack
-Step 4: Look at the test results - 1 HIGH severity issue found
-Step 5: Akto made 4 attempts - 1 succeeded with 200 OK 
-Step 6: Refresh website, notice lastname changed from "johnson" to "victim"
-Step 7: Look at the attack again, check the token on http://JWT.io
-Step 8: Observe algo=none
+1. Look at the original data - last name is "johnson"
+2. Select the endpoint you want to test for JWT None attack
+3. Click on Run test and select JWT None algo attack
+4. Look at the test results - 1 HIGH severity issue found
+5. Akto made 4 attempts - 1 succeeded with 200 OK 
+6. Refresh website, notice lastname changed from "johnson" to "victim"
+7. Look at the attack again, check the token on http://JWT.io
+8. Observe algo=none
 
 🐞 JWT None algo vulnerability found
 
@@ -80,11 +80,11 @@ https://user-images.githubusercontent.com/91306853/221206399-5b6f856b-e56c-4fe8-
 
 ## Test 6 : JWT failed to verify signature test
 
-1: Select a POST order endpoint
-2: Select the Broken Authentication test - JWT failed to verify signature
-3: Go to test results. Observe that there is a high vulnerability issue
-4: Check the Original tab - the original token signature starts with "HQq0"
-5: Check Attempt tab - gives 200 OK response with signature starting with "aQq0" - this is invalid signature, yet server accepted
+1. Select a POST order endpoint
+2. Select the Broken Authentication test - JWT failed to verify signature
+3. Go to test results. Observe that there is a high vulnerability issue
+4. Check the Original tab - the original token signature starts with "HQq0"
+5. Check Attempt tab - gives 200 OK response with signature starting with "aQq0" - this is invalid signature, yet server accepted
 
 
 
@@ -97,13 +97,13 @@ https://user-images.githubusercontent.com/91306853/221205245-6c32c6d3-2863-4db7-
 
 ## Test 7 : Broken Object Level Authorization by Parameter Pollution 
 
-1: Select BOLA by parameter pollution
-2: Run test.
-3: Check results
-4: The original request has 3 params.
-5: Attempt request has 6 params - all occurring twice with a diff "BasketId" value. 
-6: This results in a success response
-7: The victim's cart has a new product added now!
+1. Select BOLA by parameter pollution
+2. Run test.
+3. Check results
+4. The original request has 3 params.
+5. Attempt request has 6 params - all occurring twice with a diff "BasketId" value. 
+6. This results in a success response
+7. The victim's cart has a new product added now!
 
 🐞 Vulnerable API
 
@@ -115,13 +115,13 @@ https://user-images.githubusercontent.com/91306853/221206568-3d3d75f2-1e69-4d0d-
 ## Test 8 : Broken Object Level Authorization in old API versions
 
 
-1: Select the list of endpoints
-2: Select Old version API tests.
-3: Go to the test results section
-4: Check details for the vulnerability
-5: Notice that original endpoint uses v2 - /api/v2/users
-6: Navigate to Attempt tab
-7: Notice that /api/v1/users also returns 200 OK with the flag
+1. Select the list of endpoints
+2. Select Old version API tests.
+3. Go to the test results section
+4. Check details for the vulnerability
+5. Notice that original endpoint uses v2 - /api/v2/users
+6. Navigate to Attempt tab
+7. Notice that /api/v1/users also returns 200 OK with the flag
 
 🐞 BOLA in old api versions
 
@@ -133,11 +133,11 @@ https://user-images.githubusercontent.com/91306853/221204869-5b191e29-9748-4e10-
 
 ## Test 9 : Security misconfiguration - django-exposed-debug-page 
 
-1: Select the Django-exposed-debug-page test and run it
-2: Wait for the result
-3: Check the Attempt tab and look for debug details in the response
-4: Check details for the vulnerability
-5: Observe we open the debug page - with details of modules, and inner workings of Django server code
+1. Select the Django-exposed-debug-page test and run it
+2. Wait for the result
+3. Check the Attempt tab and look for debug details in the response
+4. Check details for the vulnerability
+5. Observe we open the debug page - with details of modules, and inner workings of Django server code
 
 🐞 django-exposed-debug-page
 
