@@ -160,7 +160,8 @@ https://user-images.githubusercontent.com/91306853/221204724-bb78be9a-378b-4456-
 🐞 API is vulnerable!
 
 
+https://user-images.githubusercontent.com/91306853/221481449-a3f28881-484c-4001-8b42-33bd38aa2ca6.mp4
 
-Uploading Open redirects (1).mp4…
+
 
 
