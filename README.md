@@ -146,7 +146,6 @@ https://user-images.githubusercontent.com/91306853/221204724-bb78be9a-378b-4456-
 
 
 
-
 ## Test 10 : Security misconfiguration - Open redirects
 
 1. Select the API Collection you want to test
@@ -162,6 +161,34 @@ https://user-images.githubusercontent.com/91306853/221204724-bb78be9a-378b-4456-
 
 https://user-images.githubusercontent.com/91306853/221481449-a3f28881-484c-4001-8b42-33bd38aa2ca6.mp4
 
+## Test 11 : Application DOS due to pagination misconfiguration
+
+1. Select the API collection you want to test
+2. Select "Pagination Misconfiguration" test under "Rate limiting" category.
+3. Run the test and navigate to testing tab.
+4. Click on the test result. Notice this is possible DoS.
+5. In the original request, API asks for 10 results & the response contains 10 objects
+6. In the attack request, API asks for 100 results. Server accepts this request & sends 100 objects in return
+
+🐞 API is vulnerable!
+
+
+https://user-images.githubusercontent.com/91306853/223692349-43e49750-ce99-4167-857a-bc51f426e829.mp4
+
+
+
+## Test 12 : API security misconfiguration - exposed metrics endpoint
+
+1. Select endpoints you want to test for security misconfiguration
+2. Select the misconfiguration test - Prometheus metrics.
+3. Go to test results, wait for a few seconds.
+4. Open the test result "configs" which is a vulnerable result.
+5. Check the Attempt payload and its response - Notice all metrics of Juiceshop exposed.
+
+🐞 API is vulnerable!
+
+
+https://user-images.githubusercontent.com/91306853/223692597-cbc0884c-10ab-44be-b690-a59a76a3fd64.mp4
 
 
 
