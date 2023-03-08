@@ -201,3 +201,9 @@ https://user-images.githubusercontent.com/91306853/223692597-cbc0884c-10ab-44be-
 5. In the attempt, notice that the response has sensitive data such as instance-type, local-hostname, local-ipv4.
 
 🐞 API is vulnerable!
+
+
+
+https://user-images.githubusercontent.com/91306853/223693215-c0c089cc-758c-4f4b-8105-55ebe7d921be.mp4
+
+
