@@ -191,4 +191,13 @@ https://user-images.githubusercontent.com/91306853/223692349-43e49750-ce99-4167-
 https://user-images.githubusercontent.com/91306853/223692597-cbc0884c-10ab-44be-b690-a59a76a3fd64.mp4
 
 
+## Test 13 : SSRF - AWS sensitive data exposed.
 
+1. Select your API collection.
+2. Run SSRF test on your collection.
+3. Akto runs this test only on those endpoints which take in a URL parameter.
+4. 4. Navigate to test results.
+5. Note the original response has no sensitive keywords such as instance-type etc.
+5. In the attempt, notice that the response has sensitive data such as instance-type, local-hostname, local-ipv4.
+
+🐞 API is vulnerable!
